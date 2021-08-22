@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./faveicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>24-inch Blue iMac with 4.5K Retina display - Apple</title>
+</head>
+
+<body>
+
+
+    <main>
+
+        <div class="left">
+            <img src="./imack.jfif" alt="">
+        </div>
+
+        <div class="right">
+            <h1>
+                Customize your Blue 24‑inch iMac with Apple M1 chip.</h1>
+            <p>The Apple M1 chip is the first system on a chip (SoC) for Mac. Packed with an astonishing 16 billion
+                transistors, it integrates the CPU, GPU, I/O, and every other significant component and controller onto
+                a single tiny chip. Designed by Apple, M1 brings incredible performance, custom technologies, and
+                unparalleled power efficiency to the Mac.</p>
+
+            <div class="customize">
+                <h2>Memory</h2>
+                <button onclick="handelCustomization(`memoryCost`, 0)">8GB Unified Memory</button>
+                <button onclick="handelCustomization(`memoryCost`, 200)">16GB Unified Memory</button>
+
+                <h2>Storage</h2>
+                <button>256GB SSD Storage</button>
+                <button>512GB SSD Storage</button>
+                <button>1TB SSD Storage</button>
+
+                <h2>Choose your delivery option</h2>
+                <button>1 Weak Free delivery</button>
+                <button>Delivery on 24 Hours for $20</button>
+            </div>
+
+            <div class="pricing">
+                <table>
+                    <tr>
+                        <td>Base Prise</td>
+                        <td>$1299</td>
+                    </tr>
+                    <tr>
+                        <td>Extra Memory Cost</td>
+                        <td>$ <span id="memoryCost"> 0</span></td>
+                    </tr>
+                    <tr>
+                        <td>Extra Storage Cost</td>
+                        <td>$ <span>0</span></td>
+                    </tr>
+                    <tr>
+                        <td>Delivery Cost</td>
+                        <td>$ <span> 0</span></td>
+                    </tr>
+                    <tr>
+                        <td>Total Prise</td>
+                        <td>$ <span> 1299</span></td>
+                    </tr>
+
+                </table>
+            </div>
+
+            <div class="promo_section">
+                <h3>Apply Promo</h3>
+                <input type="text" name="" id="">
+                <button>Apply</button>
+            </div>
+
+
+        </div>
+
+    </main>
+
+
+    <footer>
+        <hr>
+        <h2>Total: $<span>1299</span></h2>
+    </footer>
+
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
