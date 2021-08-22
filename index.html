@@ -33,13 +33,14 @@
                 <button onclick="handelCustomization(`memoryCost`, 200)">16GB Unified Memory</button>
 
                 <h2>Storage</h2>
-                <button>256GB SSD Storage</button>
-                <button>512GB SSD Storage</button>
-                <button>1TB SSD Storage</button>
+                <button onclick="handelCustomization(`storageCost`, 0)">256GB SSD Storage</button>
+                <button onclick="handelCustomization(`storageCost`, 200)">512GB SSD Storage</button>
+                <button onclick="handelCustomization(`storageCost`, 300)">1TB SSD Storage</button>
 
                 <h2>Choose your delivery option</h2>
-                <button>1 Weak Free delivery</button>
-                <button>Delivery on 24 Hours for $20</button>
+                <button onclick="handelCustomization(`deliveryCost`, 0)">1 Weak Free delivery</button>
+                <button onclick="handelCustomization(`deliveryCost`, 20)">Delivery on 24 Hours for $20</button>
+
             </div>
 
             <div class="pricing">
@@ -54,15 +55,15 @@
                     </tr>
                     <tr>
                         <td>Extra Storage Cost</td>
-                        <td>$ <span>0</span></td>
+                        <td>$ <span id="storageCost">0</span></td>
                     </tr>
                     <tr>
                         <td>Delivery Cost</td>
-                        <td>$ <span> 0</span></td>
+                        <td>$ <span id="deliveryCost"> 0</span></td>
                     </tr>
                     <tr>
                         <td>Total Prise</td>
-                        <td>$ <span> 1299</span></td>
+                        <td>$ <span id="totalWithoutPromo"> 1299</span></td>
                     </tr>
 
                 </table>
