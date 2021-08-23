@@ -2,7 +2,6 @@ let memoryCost = 0;
 let storageCost = 0;
 let deliveryCost = 0;
 
-
 function handelCustomization(id, extraCost) {
   document.getElementById(`${id}`).innerHTML = extraCost;
 
@@ -29,7 +28,15 @@ function handelPromo() {
       document.getElementById(`totalWithoutPromo`).innerHTML;
     let discount = totalWithoutPromo - (totalWithoutPromo * 20) / 100;
     document.getElementById("totalwithpromo").innerHTML = discount;
-  }else{
-    document.getElementById("worning").innerHTML = "tui sala borolok";
+    document.getElementById("worning").innerHTML = "";
+  } else {
+    document.getElementById("worning").innerHTML = "Tui sala borolok";
   }
+  document.getElementById("promoInput").value = "";
 }
+
+document.getElementById("promoInput").addEventListener("keyup", (e) => {
+  if (e.keyCode == 13) {
+    handelPromo();
+  }
+});

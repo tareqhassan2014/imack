@@ -27,3 +27,10 @@ main {
 footer h2 {
   text-align: center;
 }
+
+#worning{
+  color: red;
+  font-size: 10px;
+  margin: 0px;
+  padding: 0px;
+}
