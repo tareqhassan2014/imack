@@ -2,6 +2,7 @@ let memoryCost = 0;
 let storageCost = 0;
 let deliveryCost = 0;
 
+
 function handelCustomization(id, extraCost) {
   document.getElementById(`${id}`).innerHTML = extraCost;
 
